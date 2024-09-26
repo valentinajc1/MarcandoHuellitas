@@ -73,7 +73,7 @@ html{
 
 .banner img {
     width: 100%;
-    height: auto; /* Mantiene la proporción */
+    height: auto; 
     filter: brightness(70%); /* Oscurece la imagen para resaltar el texto */
 }
 
@@ -82,12 +82,12 @@ html{
     text-align: center;
     color: white; 
     font-size: 2rem; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 @media (max-width: 600px) {
     .banner-text h1 {
-        font-size: 1.5rem; /* Tamaño del texto en pantallas pequeñas */
+        font-size: 1.5rem; 
     }
 }
 
@@ -101,13 +101,18 @@ html{
     padding-top: 2px;
     margin-bottom: 2rem;
 }
-
+.element-wrap {
+    display: flex;
+    align-items: center; 
+}
 .seccion-contenido {
     display: flex;
     align-items: flex-start;
 }
 
-
+.img-logo {
+    margin-right: 55px; /* Añade espacio entre el logo y el texto */
+}
 .img-logo img {
     margin-right: 50%;
     border-radius: 50%;
@@ -115,19 +120,13 @@ html{
     
 }
 
-
-.frame-context {
-    display: flex;
-    justify-content: space-between; /* Espacia los elementos de manera uniforme */
-align-items: center; /* Alinea verticalmente en el centro */
-gap: 2rem; /* Espaciado entre la imagen y el texto */
-}
-
-
 .img-context {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: 30%;
+    margin-top: -40px;
+    gap: 30px;
 }
 
 .context {

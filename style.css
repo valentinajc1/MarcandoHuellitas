@@ -46,22 +46,51 @@ html{
     display: inline-block;
     padding: 5px 20px; /* Espaciado interno (padding) para dar apariencia de botón */
     background-color: rgba(255, 255, 255, 0.583);
-    border-radius: 25px; /* Bordes redondeados para botones */
+    border-radius: 25px; 
     color: var(--button-text-color);
     font-weight: bold;
     border: 2px solid transparent;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 .encabezado ul li a:hover {
-    background-color: var(--button-hover-color); /* Cambio de color al pasar el mouse */
-    color: var(--button-color); /* Texto blanco al hacer hover */
-    border-color: var(--button-hover-color); /* Borde del color del hover */
+    background-color: var(--button-hover-color); 
+    color: var(--button-color); 
+    border-color: var(--button-hover-color); 
 }
 .tittle-encabezado{
     font-weight: bold;
     margin-left: 20px;
     padding: auto;
 }
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 330px; 
+}
+
+.banner img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    filter: brightness(70%); /* Oscurece la imagen para resaltar el texto */
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    color: white; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+@media (max-width: 600px) {
+    .banner-text h1 {
+        font-size: 1.5rem; /* Tamaño del texto en pantallas pequeñas */
+    }
+}
+
 .seccion1 {
     display: flex;
     flex-direction: column;

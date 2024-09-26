@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Kay+Pho+Du:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --primary-color: #70c5e7;
+    --background-color: #f5e9db;
+    --dark-color: #000000;
+    --button-color: #ffffff; /* Color de fondo para el botón */
+    --button-hover-color: #3da9c9; /* Color de fondo al hacer hover */
+    --button-text-color: #161616; /* Color del texto del botón */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Playfair Display', serif;
+}
+.encabezado {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.encabezado a {
+    font-size: 18px;
+    color: var(--button-text-color);
+    text-decoration: none;
+}
+
+.encabezado ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 10px;
+    margin-left: auto; 
+}
+
+.encabezado ul li {
+    margin-left: 40px;
+}
+
+.encabezado ul li a {
+    display: inline-block;
+    padding: 5px 20px; /* Espaciado interno (padding) para dar apariencia de botón */
+    background-color: rgba(255, 255, 255, 0.583);
+    border-radius: 25px; /* Bordes redondeados para botones */
+    color: var(--button-text-color);
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.encabezado ul li a:hover {
+    background-color: var(--button-hover-color); /* Cambio de color al pasar el mouse */
+    color: var(--button-color); /* Texto blanco al hacer hover */
+    border-color: var(--button-hover-color); /* Borde del color del hover */
+}
+.tittle-encabezado{
+    font-weight: bold;
+    margin-left: 20px;
+    padding: auto;
+}
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion1 h1 {
+    font-size: 2rem;
+    padding-top: 2px;
+    margin-bottom: 2rem;
+}
+
+.seccion-contenido {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.img-logo img {
+    margin-right: 50%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.frame-context {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos de manera uniforme */
+align-items: center; /* Alinea verticalmente en el centro */
+gap: 2rem; /* Espaciado entre la imagen y el texto */
+}
+
+
+.img-context {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.context {
+    text-align: left;
+}

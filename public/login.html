@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Login</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="container-header">
+            <div class="container header">
+                <div class="encabezado">
+                    <a class="tittle-encabezado" href="/index.html">MARCANDO HUELLITAS</a>
+                    <ul>
+                        <li> <a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Adoptar</a> </li>
+                        <li><a href="#">Ayuda aqui</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para empezar a interactuar por favor incia sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesición" id="logearse">
+            </div>
+        </div>
+            <div class="form-information">
+                <div class="form-information-childs">
+                    <h2>Crear una cuenta</h2>
+                    <form class="form form-register" novalidate>
+                        <div>
+                            <label>
+                                <i class='bx bxs-user'></i>
+                                <input type="text" placeholder="Nombre de usuario" name="userName">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" placeholder="Correo electronico" name="userEmail">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <i class='bx bx-lock-alt'></i>
+                                <input type="password" placeholder="contraseña" name="userPassword">
+                            </label>
+                        </div>
+                        <input type="submit" value="Registrarse">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-form login hide">
+            <div class="information">
+                <div class="info-childs">
+                    <h2>¡¡Bienvenido nuevamente!!</h2>
+                    <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                    <input type="button" value="Registrarse" id="registrarsee">
+                </div>
+            </div>
+            <div class="form-information">
+                <div class="form-information-childs">
+                    <h2>Iniciar Sesión</h2>
+                    <form class="form form-login" novalidate>
+                        <div>
+                            <label>
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" placeholder="Correo Electronico" name="userPassword">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <i class='bx bx-lock-alt'></i>
+                                <input type="password" placeholder="Contraseña" name="userPassword">
+                            </label>
+                        </div>
+                        <input type="submit" value="Iniciar Sesión">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="./js/login-script.js"></script>
 </body>
 </html>

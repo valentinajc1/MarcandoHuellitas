@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: #70c5e7;
+    --background-color: #f5e9db;
+    --dark-color: #000000;
+    --button-color: #ffffff;
+    --button-hover-color: #3da9c9;
+    --button-text-color: #161616;
+}
+
+.encabezado {
+    background-color: #c7eef3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.encabezado a {
+    font-size: 18px;
+    color: var(--button-text-color);
+    text-decoration: none;
+}
+
+.encabezado ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 10px;
+    margin-left: auto;
+}
+
+.encabezado ul li {
+    margin-left: 40px;
+}
+
+.encabezado ul li a {
+    display: inline-block;
+    padding: 5px 20px;
+    /* Espaciado interno (padding) para dar apariencia de botón */
+    background-color: rgba(255, 255, 255, 0.583);
+    border-radius: 25px;
+    color: var(--button-text-color);
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.encabezado ul li a:hover {
+    background-color: var(--button-hover-color);
+    color: var(--button-color);
+    border-color: var(--button-hover-color);
+}
+
+.tittle-encabezado {
+    font-weight: bold;
+    margin-left: 20px;
+    padding: auto;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/img-login/img-fondo-login.jpg);
+    background-size: cover;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+    margin-top: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #c7eef3d1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px var(--button-hover-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #126d91;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+    background-color: var(--button-hover-color);
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #f8f8f8b4;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p {
+    color: #555;
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form label i {
+    color: #a7a7a7;
+}
+
+.form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+
+@media screen and (max-width:750px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0;
+    }
+
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}

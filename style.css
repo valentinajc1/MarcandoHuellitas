@@ -132,3 +132,50 @@ html{
 .context {
     text-align: left;
 }
+.swiper {
+    position: relative;
+    padding: 20px;
+
+}
+h2 {
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--button-hover-color);
+    font-size: 45px;
+}
+.swiper-wrapper{
+    
+    display: flex;
+    align-items: center;
+    padding-left: 185px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.slide-text {
+    flex: 1;
+    padding-right: 20px;
+}
+.slide-text h3 {
+    margin-top: 0;
+    color: var(--primary-color); 
+}
+.slide-image img {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

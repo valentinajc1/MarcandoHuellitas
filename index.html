@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>HOME|MARCANDO HUELLITAS</title>
 </head>
 
@@ -58,11 +59,57 @@
             </div>
     </section>
     <section>
-        <p>
-
-        </p>
-    </section>
-
+        <div class="swiper">
+            <h2>Historias de éxito</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <h3>Mila</h3>
+                            <p>Hola, hace 2 meses decidí adoptar a Mila, una gatita ploma que ahora tiene 7 meses. <br>
+                                Me alegra mucho haber tomado esa decisión, me acompaña todos los días. 
+                            </p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="./img/img-swiper/img-swaper1.jpg" alt="gatito plomo de 7 meses" height="120" width="150">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <h3>Pimienta</h3>
+                            <p>Acabo de adoptar a esta gatita, la llamé Pimienta. Estoy muy contento y pronto les seguiré contando más novedades sobre ella.
+                            </p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="./img/img-swiper/img-swaper2.jpg" alt="Gatita Pimienta" height="120" width="150">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <h3>Orejón</h3>
+                            <p>Adopté un perrito hace unos meses, y se ha vuelto un integrante más de nuestra familia.
+                            </p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="./img/img-swiper/img-swaper3.jpg" alt="Perro orejón" height="130" width="150">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            <!-- Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./public/js/swiper.js"></script>
 </body>
 
 </html>
